@@ -1,3 +1,5 @@
 import {combineReducers} from "redux"
 
-export default combineReducers({})
+import watson from "./watson"
+
+export default combineReducers({watson})
