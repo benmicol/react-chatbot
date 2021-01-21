@@ -1,15 +1,18 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {connect} from "react-redux"
-
+//Import Action
 import {userMessage, sendMessage} from "../../actions/watson"
 
 const Chat = ({chat, userMessage, sendMessage}) => {
+    //Handle User Messages
     const [message, setMessage] = useState("")
+    //Smooth Scrolling To Bottom
     const endOfMessages = useRef(null)
     const scrollToBottom = () =>{
         endOfMessages.current.scrollIntoView({behavior: "smooth"})
     }
     useEffect(scrollToBottom,[chat])
+    //Handle User Submission
     const handleClick = async (e) =>{
         const code = e.keyCode || e.which
         if (code === 13) {

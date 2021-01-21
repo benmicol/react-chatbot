@@ -2,6 +2,7 @@ import {INPUT_SUCCESS, INPUT_FAIL, SESSION_FAIL, SESSION_SUCCESS, MESSAGE_FAIL, 
 
 import axios from "axios"
 
+//Hanlde User Messages
 export const userMessage = (message) => async (dispatch) =>{
     try{
         dispatch({type:INPUT_SUCCESS, payload:message})
@@ -9,7 +10,7 @@ export const userMessage = (message) => async (dispatch) =>{
         dispatch({type: INPUT_FAIL})
     }
 }
-
+//Create a Session
 export const createSession = () => async (dispatch) => {
     try {
       const res = await axios.get("/api/watson/session");
@@ -18,7 +19,7 @@ export const createSession = () => async (dispatch) => {
       dispatch({ type: SESSION_FAIL });
     }
   };
-
+//Send Messages To Bot
 export const sendMessage = (message) => async (dispatch) =>{
     try{
         const body = {input:message}
