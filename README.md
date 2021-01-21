@@ -30,6 +30,11 @@
 
 React Chatbot is a simple chatbot connected to IBM Watson Assistant.
 
+### How it Works
+
+* The main chatbot functionality is built around integration with the IBM Watson Assistant API which allows us to create specific actions and intents using IBM's online interface. 
+* Watson assistant is connected to the application by a backend API created to GET a session ID and POST a user's messages.
+
 ### Built With
 
 * HTML
