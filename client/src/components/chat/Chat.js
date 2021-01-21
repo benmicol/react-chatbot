@@ -24,7 +24,7 @@ const Chat = ({chat, userMessage, sendMessage}) => {
     }
     return (
         <div className="chat">
-            <h1>Chatty the chatbot</h1>
+            <h1>React Chatbot</h1>
             <div className="historyContainer">
             {chat.length===0 ? "" : chat.map(msg=><div className={msg.type}>{msg.message}</div>)}
             <div ref={endOfMessages}></div>

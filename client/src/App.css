@@ -12,7 +12,7 @@ input{
   margin-top: 20px;
 }
 .bot{
-  background-color: rgb(152, 85, 212);
+  background-color: rgb(85, 212, 106);
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 10px;
@@ -23,7 +23,7 @@ input{
   max-width: 300px;
 }
 .user{
-  background-color: rgb(0, 180, 160);
+  background-color: rgb(0, 72, 180);
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 10px; 
